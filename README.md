@@ -1,5 +1,3 @@
-# LiTS-challenge
-
 # LiTS Liver/Tumor Segmentation 
 
 
