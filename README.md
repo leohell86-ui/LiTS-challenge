@@ -26,13 +26,7 @@ conda install -n lits -c pytorch pytorch=2.2.2 torchvision=0.17.2 torchaudio=2.2
 # Register kernel
 conda run -n lits python -m ipykernel install --user --name conda_lits --display-name "LiTS (conda_lits)"
 ```
-Or use helper script:
-```powershell
-# Creates env, installs PyTorch, registers kernel
-.\Test files\create_conda_env.ps1
-# With GPU attempt (example)
-.\Test files\create_conda_env.ps1 -UseGpu -CudaVersion 121
-```
+
 
 ### Option B: Python venv
 ```powershell
@@ -42,14 +36,6 @@ Or use helper script:
 .\Test files\create_kernel.ps1 -UseGpu
 ```
 
-## Verify Installation
-```powershell
-# Print torch version + CUDA availability
-python .\Test files\check_torch_gpu.py
-
-# Smoke test of core imports + GPU check
-python .\Test files\run_smoke.py
-```
 
 ## Data
 - Place LiTS-style NIfTI volumes and segmentations under `data/`.
@@ -59,12 +45,6 @@ python .\Test files\run_smoke.py
 ## Notebooks
 - Open [NNtraining.ipynb](NNtraining.ipynb), [DataManagement.ipynb](DataManagement.ipynb), or [ApplyModels.ipynb](ApplyModels.ipynb) in Jupyter.
 - Select the kernel you registered (e.g., `LiTS (conda_lits)` or venv name).
-
-To run a notebook programmatically:
-```powershell
-# Edit kernel name in the script if needed
-python .\Test files\execute_notebook.py
-```
 
 ## Quick Evaluation
 A minimal UNet evaluator for sanity checks:
