@@ -10,6 +10,8 @@ Afterwards, the notebook DataManagement.ipynb will re-order your files.
 
 Run NNTraining.ipynb to obtain the models for the UNet training and then apply it using ApplyModels.ipynb. 
 
+The MetricsEvaluation.ipynb notebook was done to evaluate some metrics of the ImageJ approach of the segmentation, where the segmentations done by hand are stored in the folder LucaSegmentation.
+
 ## Setup (Windows)
 Choose Conda or Python venv. The use of GPU is advised.
 
