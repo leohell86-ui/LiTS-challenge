@@ -46,14 +46,6 @@ conda run -n lits python -m ipykernel install --user --name conda_lits --display
 - Open [NNtraining.ipynb](NNtraining.ipynb), [DataManagement.ipynb](DataManagement.ipynb), or [ApplyModels.ipynb](ApplyModels.ipynb) in Jupyter.
 - Select the kernel you registered (e.g., `LiTS (conda_lits)` or venv name).
 
-## Quick Evaluation
-A minimal UNet evaluator for sanity checks:
-```powershell
-python .\Test files\evaluate_model.py
-```
-- Looks for pairs under `data/`, evaluates a small slice range, and writes samples to [eval_outputs](eval_outputs).
-- If `best_model.pth` exists in repo root, it will attempt to load compatible weights.
-
 ## Tips
 - GPU installs depend on matching CUDA/toolkit; if unsure, use CPU wheels.
 - For larger experiments, use the notebooks and your preferred kernels.
